@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = "mongodb+srv://vibhorkolhe:6AO0DfGdz3QDAyZJ@demo.ucefbps.mongodb.net/payment_server"
+}
+
+model User {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  Firstname    String
+  Lastname     String
+  Password     String
+  Balance      Float
+  Phone_no     Int      @unique
+  Email        String   @unique
+  CreationDate DateTime @default(now())
+}
+
+model Transaction {
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
+  // user_id         String
+  From            Int
+  To              Int
+  Status          String
+  TransactionDate DateTime @default(now())
+  Amount          Float
+}
