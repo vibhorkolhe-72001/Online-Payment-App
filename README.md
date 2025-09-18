@@ -19,11 +19,11 @@ It allows users to register, log in, search contacts, send payments, and view tr
 
 ## 🛠️ Tech Stack  
 
-- **Frontend:** React, Tailwind CSS (if used), Context/Redux (if used)  
+- **Frontend:** React, Tailwind CSS 
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB with Prisma ORM  
 - **Authentication:** JWT (JSON Web Tokens)  
-- **Others:** Axios, Animation Libraries (Lottie / Framer Motion)  
+- **Others:** Axios, Animation Libraries (Lottie)  
 
 ---
 
